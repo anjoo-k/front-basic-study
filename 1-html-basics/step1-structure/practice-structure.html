@@ -71,7 +71,7 @@
 4. 브라우저와 개발도구의 더 나은 지원
 -->
 
-<!-- HTML 5 문서 선언부     >> 버전에 따라 선언부의 모습이 다르므로 다른 선언부를 만났을 때 당황하지 말자 -->
+<!-- DOCTYPE : HTML 5 문서 선언부     >> 버전에 따라 선언부의 모습이 다르므로 다른 선언부를 만났을 때 당황하지 말자 -->
 <!DOCTYPE html>
 <!-- HTML 태그 : 모든 HTML 요소를 감싸는 최상위(루트) 요소 -->
 <html lang="ko">
@@ -83,7 +83,7 @@
     <!-- 반응형 웹을 위한 설정
         모바일에서도 잘 보이도록 설정하는 필수 메타 태그 -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- 브라우저 탭에 표시, 검색 결과에도 표시됨 -->
+    <!-- title : 브라우저 탭에 표시, 검색 결과에도 표시됨, 상세히 적는 것이 좋다 -->
     <title>HTML 기초 구조 학습</title>
   </head>
   <!--
@@ -112,6 +112,7 @@
     </h3>
     <!-- h1 ~ h6 까지 제공 -->
     <hr />
+
     <h2>텍스트 서식 태그</h2>
     <h3>줄바꿈과 문단</h3>
     <p>
@@ -119,6 +120,25 @@
       <br />
       br 태그를 사용해야 합니다.
     </p>
+
+    <h3>의미있는 (시맨틱) 텍스트 마크업</h3>
+    <!-- cite : 작품명, 저작물의 제목을 나타낼 때 사용 -->
+    <p>책제목 : <cite>데미안</cite> 데미안</p>
+    <!-- code : 프로그래밍 코드나 관련 텍스트를 표시-->
+    <p>프로그래밍 코드 : <code>console.log("Hello World")</code></p>
+    <!-- strong 중요도가 높은 내용, 굵은 글씨로 표시-->
+    <p>중요 공지사항 : <strong>점심시간입니다.</strong></p>
+    <hr />
+
+    <h2>실제 활용 시맨틱 웹 텍스트 태그 - 자기소개서</h2>
+    <h3>기본 정보</h3>
+    <p>안녕하세요 저는 <strong>개발자를 꿈꾸는</strong> 손흥민입니다.</p>
+    <p>현재 <em>Java, JDBC, Database, HTML</em>을 열심히 공부하고 있습니다.</p>
+    <h3>기술 스택</h3>
+    <p>주로 사용하는 언어 : <code>Javascript</code>, <code>Java</code></p>
+    <h3>연락처</h3>
+    <p><strong>이메일</strong> nnnn@naver.com</p>
+    <p><strong>깃허브</strong> github.com</p>
   </body>
 </html>
 
